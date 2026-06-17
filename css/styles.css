@@ -800,6 +800,15 @@ body.menu-open .menu-toggle span:last-child {
   padding: clamp(24px, 4vw, 42px);
 }
 
+.location__panel h2 {
+  font-size: clamp(2.35rem, 4.2vw, 4.2rem);
+  text-wrap: balance;
+}
+
+.keep-together {
+  white-space: nowrap;
+}
+
 .contact-list {
   display: grid;
   gap: 0;
@@ -906,10 +915,10 @@ address {
   bottom: 22px;
   display: inline-flex;
   align-items: center;
-  gap: 10px;
-  min-width: 58px;
-  min-height: 58px;
-  padding: 0 17px;
+  justify-content: center;
+  width: 58px;
+  height: 58px;
+  padding: 0;
   border-radius: 999px;
   color: #fff;
   background: var(--whatsapp);
@@ -934,15 +943,29 @@ address {
 }
 
 .whatsapp-fab span {
-  max-width: 160px;
-  overflow: hidden;
+  position: absolute;
+  right: calc(100% + 10px);
+  top: 50%;
+  transform: translateY(-50%);
+  width: max-content;
+  max-width: 170px;
+  padding: 8px 11px;
+  border: 1px solid rgba(216, 206, 196, 0.72);
+  border-radius: 999px;
+  color: var(--ink);
+  background: rgba(252, 250, 246, 0.94);
+  box-shadow: 0 12px 34px rgba(42, 35, 32, 0.12);
+  font-size: 0.86rem;
+  line-height: 1;
   white-space: nowrap;
-  transition: max-width 300ms ease, opacity 300ms ease;
+  opacity: 1;
+  transition: opacity 260ms ease, transform 260ms ease;
 }
 
-.whatsapp-fab.is-compact span {
-  max-width: 0;
+.whatsapp-fab.is-label-hidden span {
   opacity: 0;
+  transform: translate(8px, -50%);
+  pointer-events: none;
 }
 
 body.menu-open .whatsapp-fab {
@@ -1203,6 +1226,10 @@ body.menu-open .whatsapp-fab {
   .contact-list li {
     grid-template-columns: 1fr;
     gap: 4px;
+  }
+
+  .location__panel h2 {
+    font-size: clamp(1.85rem, 8vw, 2.4rem);
   }
 
   .footer__brand strong {

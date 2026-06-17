@@ -226,7 +226,7 @@
       fab.classList.add("is-visible");
     }, 5000);
     window.setTimeout(function () {
-      fab.classList.add("is-compact");
+      fab.classList.add("is-label-hidden");
     }, 10200);
   }
 
