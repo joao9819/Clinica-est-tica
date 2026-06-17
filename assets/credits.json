@@ -1,0 +1,35 @@
+{
+  "notes": "Imagens placeholder criadas localmente para o template. Substitua por fotos reais da profissional, ambiente e resultados autorizados antes da publicação final.",
+  "items": [
+    {
+      "file": "assets/img/hero-clinica-boutique.webp",
+      "title": "Ambiente boutique claro",
+      "type": "placeholder gerado localmente",
+      "credit": "Template"
+    },
+    {
+      "file": "assets/img/sobre-consulta-delicada.webp",
+      "title": "Consulta delicada sem identificação",
+      "type": "placeholder gerado localmente",
+      "credit": "Template"
+    },
+    {
+      "file": "assets/img/placeholder-micropigmentacao.webp",
+      "title": "Materiais de micropigmentação",
+      "type": "placeholder gerado localmente",
+      "credit": "Template"
+    },
+    {
+      "file": "assets/img/placeholder-lobuloplastia.webp",
+      "title": "Cuidado relacionado a lóbulos",
+      "type": "placeholder gerado localmente",
+      "credit": "Template"
+    },
+    {
+      "file": "assets/img/placeholder-queloide.webp",
+      "title": "Composição abstrata de cuidado com cicatriz",
+      "type": "placeholder gerado localmente",
+      "credit": "Template"
+    }
+  ]
+}
